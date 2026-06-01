@@ -5,6 +5,17 @@ This repository is a public scaffold for ROS 2 Humble learning labs focused on m
 
 The current repository contains the initial public structure. Labs and runnable examples will be added incrementally.
 
+## Repository Role
+This repo is the ROS2 systems foundation for the broader mobile-manipulation research portfolio. It should hold the clean learning labs and integration patterns that support the more research-specific demos.
+
+| Related repo | Relationship |
+|---|---|
+| [`hello_world_ros2_edx`](https://github.com/WikiGenius/hello_world_ros2_edx) | Earlier ROS2 learning/migration evidence; keep as support, not pinned. |
+| [`ros2-moveit-grasping-demo`](https://github.com/WikiGenius/ros2-moveit-grasping-demo) | Manipulation execution layer using ROS2 and MoveIt2. |
+| [`line-scan-mobile-manipulator-demo`](https://github.com/WikiGenius/line-scan-mobile-manipulator-demo) | Main public active-scanning demo that will need ROS2 launch/simulation patterns. |
+| [`orb_slam_demo`](https://github.com/WikiGenius/orb_slam_demo) | Visual state-estimation scaffold that can share ROS2 integration patterns. |
+| [`robotics-control-learning-labs`](https://github.com/WikiGenius/robotics-control-learning-labs) | Control foundation that can feed mobile robot and mobile manipulator examples. |
+
 ## Research/Engineering Motivation
 Mobile robotics requires the integration of software architecture, robot models, simulation, sensing, transforms, visualization, and control. ROS 2 provides the middleware for connecting those pieces, but learning it is easier when each concept is isolated in a clean lab.
 
@@ -16,6 +27,7 @@ This repository is designed to become a practical bridge between robotics theory
 - Planned launch-file and RViz workflows.
 - Planned URDF and robot-state-publisher examples.
 - Planned simulation exercises and experiment logs.
+- Public cross-links to mobile manipulation, active scanning, visual SLAM, and control support repos.
 
 ## Method
 Each lab will follow a reproducible pattern:
@@ -64,13 +76,18 @@ Planned artifacts:
 - The repository is currently a scaffold and does not yet include full runnable labs.
 - Examples will target ROS 2 Humble first.
 - Simulation environments and robot models may be simplified for learning purposes.
+- Research-specific launch files or datasets stay in private repos until public release is appropriate.
 
 ## Roadmap
 - [ ] Add first ROS 2 node lab.
 - [ ] Add launch-file lab.
 - [ ] Add URDF/RViz lab.
 - [ ] Add simulation workflow and logs.
+- [ ] Add a bridge note to the active-scanning demo.
 - [ ] Add report links or learning notes.
 
 ## Citation / Acknowledgment
 Acknowledge ROS 2, Gazebo/Ignition, RViz, robot model packages, course materials, or tutorials used in each lab. Third-party materials remain under their own licenses.
+
+## Related Organization
+See [`docs/related-repositories.md`](docs/related-repositories.md) for how this ROS2 lab fits into the public portfolio.
