@@ -1,3 +1,3 @@
 # Media
 
-Use this folder for RViz screenshots, simulation GIFs, videos, and annotated figures.
+Reserved for future public-safe RViz screenshots, simulation GIFs, videos, and annotated figures.

@@ -1,12 +1,12 @@
 # ROS2 Mobile Robotics Labs
 
-Public ROS2 Humble learning lab for mobile robotics systems, including nodes, launch files, URDF/RViz, simulation workflows, and reusable integration patterns.
+Public ROS2 Humble learning hub for organizing mobile robotics systems work, including nodes, launch files, URDF/RViz, simulation workflows, and reusable integration patterns.
 
 ## Purpose
 
-This repository exists to organize public-safe ROS2 mobile robotics labs that support the broader mobile-manipulation research portfolio. It should show practical ROS2 competence without pretending that full robot simulation, autonomy, or research integration is already complete.
+This repository exists to organize public-safe ROS2 mobile robotics labs that support the broader mobile-manipulation research portfolio. It should show practical ROS2 direction and structure without pretending that full robot simulation, autonomy, or research integration is already complete.
 
-The repository currently includes a minimal C++ `cmd_vel_demo` publisher and launch file as the first runnable lab.
+It currently contains package scaffolding, folder organization, README documentation, and related-repository mapping. It does not currently contain a runnable node, launch demo, complete mobile robot simulation stack, or validated autonomy pipeline.
 
 ## Relation to My PhD Direction
 
@@ -31,17 +31,18 @@ Related public repos:
 
 ## Maturity Level
 
-**Current status:** Public research scaffold / early-stage organization repo with one runnable ROS2 starter lab
+**Current status:** Public research organization repo / ROS2 mobile robotics scaffold
 
-This repository is currently intended to organize public-facing ROS2 learning structure and host simplified, non-confidential demos. It does not yet represent a complete mobile robot simulation stack or a validated autonomy pipeline.
+This repository is currently intended to organize public-facing ROS2 learning structure and connect mobile robotics work to the rest of the research portfolio.
 
 ### Implemented now
 
 - [x] Repository structure
 - [x] README and project organization
-- [x] Minimal C++ ROS2 publisher
-- [x] Launch file for the starter node
-- [x] Lab note for the starter node
+- [x] Related-repository map
+- [x] ROS2 package metadata scaffold
+- [ ] Public-safe ROS2 node
+- [ ] Launch file for a real public-safe lab
 - [ ] URDF/RViz lab
 - [ ] Simulation world
 - [ ] Mobile robot controller integration
@@ -60,28 +61,25 @@ This repository is currently intended to organize public-facing ROS2 learning st
 ## Current Contents
 
 ```text
-src/       minimal C++ ROS2 starter node
-launch/    launch file for the starter node
+src/       reserved for future public-safe ROS2 nodes
+launch/    reserved for future public-safe launch files
 docs/      related-repository map and lab notes
-results/   future logs/tables/outputs
-media/     future screenshots/GIFs/videos
+results/   reserved for future logs/tables/outputs
+media/     reserved for future screenshots/GIFs/videos
 ```
 
 ## What This Repo Demonstrates Now
 
 This repo currently demonstrates:
 
-- a minimal ROS2 C++ publisher pattern,
-- launch-file structure,
-- safe topic naming using `/cmd_vel_demo` instead of `/cmd_vel`,
-- a public foundation for future mobile robotics labs.
-
-The starter node publishes a toy velocity command for topic inspection. It is not a robot controller and should not be used to drive hardware.
+- a clean public scaffold for ROS2 mobile robotics labs,
+- how ROS2 support work relates to MoveIt2 grasping, visual estimation, control, and active scanning,
+- a place to add future launch/simulation patterns only when they are real and safe to publish.
 
 ## Planned Development Roadmap
 
 - **Stage 0: repository scaffold** - organize README, package metadata, folders, docs, and public/private policy.
-- **Stage 1: toy synthetic example** - provide minimal ROS2 node and launch file.
+- **Stage 1: public-safe ROS2 lab** - add a minimal node or launch demo only when intentionally designed and reviewed.
 - **Stage 2: metric/logging pattern** - add topic graph screenshots or command logs.
 - **Stage 3: baseline mobile robot lab** - add URDF/RViz and simulation basics.
 - **Stage 4: ROS2/MoveIt integration** - connect mobile base concepts to manipulation workflows.
@@ -93,9 +91,9 @@ The starter node publishes a toy velocity command for topic inspection. It is no
 
 Public here:
 
-- simple ROS2 learning nodes,
-- launch-file patterns,
-- synthetic/simulated examples,
+- simple ROS2 learning notes,
+- launch-file structure when real examples are added,
+- synthetic/simulated examples after review,
 - screenshots and topic graphs,
 - reusable setup notes.
 
@@ -109,35 +107,9 @@ Private elsewhere:
 
 ## How to Run
 
-Create or enter a ROS2 workspace:
+There is currently no runnable ROS2 node or launch demo in this public repo.
 
-```bash
-mkdir -p ~/ros2_ws/src
-cd ~/ros2_ws/src
-git clone https://github.com/WikiGenius/ros2-mobile-robotics-labs.git
-cd ~/ros2_ws
-rosdep install --from-paths src --ignore-src -r -y
-colcon build --packages-select ros2_mobile_robotics_labs
-source install/setup.bash
-```
-
-Run the current starter node:
-
-```bash
-ros2 run ros2_mobile_robotics_labs minimal_cmd_vel_demo
-```
-
-Or launch it:
-
-```bash
-ros2 launch ros2_mobile_robotics_labs minimal_cmd_vel_demo.launch.py
-```
-
-Inspect the published topic:
-
-```bash
-ros2 topic echo /cmd_vel_demo
-```
+When a real public-safe lab is added, this section should include the exact workspace setup, `colcon build` command, and run/launch command.
 
 ## Expected Future Outputs
 
@@ -174,4 +146,4 @@ This repository is shared as a public academic portfolio/scaffold. Unless a sepa
 
 ## Related Organization
 
-See [`docs/related-repositories.md`](docs/related-repositories.md) for how this ROS2 lab fits into the public portfolio and [`docs/lab-01-minimal-cmd-vel.md`](docs/lab-01-minimal-cmd-vel.md) for the starter lab notes.
+See [`docs/related-repositories.md`](docs/related-repositories.md) for how this ROS2 lab fits into the public portfolio.

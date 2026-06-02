@@ -1,3 +1,3 @@
 # Launch
 
-Place ROS 2 launch files for each lab here.
+Reserved for future public-safe ROS2 launch files after real labs are intentionally added.
