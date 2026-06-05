@@ -8,9 +8,10 @@ This page explains how the ROS2 mobile robotics labs support the rest of the pub
 |---|---|---|
 | [`ros2-mobile-robotics-labs`](https://github.com/WikiGenius/ros2-mobile-robotics-labs) | ROS2 systems foundation | Clean labs for nodes, launch files, URDF, RViz, simulation, and mobile robotics basics. |
 | [`hello_world_ros2_edx`](https://github.com/WikiGenius/hello_world_ros2_edx) | Earlier learning evidence | Useful history/migration reference, but not a main pinned repo. |
+| [`husky-gazebo-image-capture`](https://github.com/WikiGenius/husky-gazebo-image-capture) | Mobile robot data capture | ROS2 Husky/Gazebo image and odometry capture for later visual-SLAM experiments. |
 | [`ros2-moveit-grasping-demo`](https://github.com/WikiGenius/ros2-moveit-grasping-demo) | Manipulation execution | Uses ROS2/MoveIt2 patterns for Cartesian motion, gripper control, and grasping. |
 | [`line-scan-mobile-manipulator-demo`](https://github.com/WikiGenius/line-scan-mobile-manipulator-demo) | Main active-scanning demo | Future launch/simulation patterns can reuse ROS2 lab structure. |
-| [`orb_slam_demo`](https://github.com/WikiGenius/orb_slam_demo) | Visual state estimation | ROS2 scaffold for visual SLAM-style integration. |
+| [`ros-husky-traffic-sign-detection`](https://github.com/WikiGenius/ros-husky-traffic-sign-detection) | Legacy ROS perception | Older ROS/catkin Husky/Gazebo traffic-sign detection demo; useful history, not merged into this ROS2 repo. |
 
 ## What Belongs Here
 

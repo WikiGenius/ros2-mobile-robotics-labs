@@ -6,6 +6,17 @@ This repository is a public ROS2 mobile robotics scaffold for organizing future 
 
 It supports the broader mobile-manipulation research portfolio without pretending that full robot simulation, autonomy, or research integration is already complete.
 
+## Portfolio Role
+
+This repo should act as the ROS2 organization hub, not a container for every ROS-related project.
+
+| Related repo | Stack | Relationship |
+|---|---|---|
+| [`hello_world_ros2_edx`](https://github.com/WikiGenius/hello_world_ros2_edx) | ROS2 | Course-based ROS2 learning and ROS1-to-ROS2 migration evidence. |
+| [`husky-gazebo-image-capture`](https://github.com/WikiGenius/husky-gazebo-image-capture) | ROS2 | Husky/Gazebo image and odometry capture for later visual-SLAM experiments. |
+| [`ros2-moveit-grasping-demo`](https://github.com/WikiGenius/ros2-moveit-grasping-demo) | ROS2 / MoveIt2 | Perception-guided grasping and manipulation execution. |
+| [`ros-husky-traffic-sign-detection`](https://github.com/WikiGenius/ros-husky-traffic-sign-detection) | ROS 1 / catkin | Legacy Husky/Gazebo traffic-sign perception demo; related history, not merged here. |
+
 ## Tested Environment
 
 No end-to-end runnable lab environment is fully documented yet.
