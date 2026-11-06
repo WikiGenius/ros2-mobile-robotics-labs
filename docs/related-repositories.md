@@ -1,41 +1,14 @@
-# Related Repositories
+# Related projects
 
-This page explains how the ROS2 mobile robotics labs support the rest of the public research portfolio.
+This repository is a navigation and lab scaffold. See the [main index](../README.md) for its current scope; it does not yet provide a runnable ROS2 lab.
 
-## Public ROS2 Family
+| Project | Role |
+| --- | --- |
+| [Husky image capture](https://github.com/WikiGenius/husky-gazebo-image-capture) | ROS2 image and odometry collection in simulation |
+| [MoveIt grasping](https://github.com/WikiGenius/ros2-moveit-grasping-demo) | Arm and gripper execution from a target pose, with external robot configuration and perception |
+| [Traffic-sign detection](https://github.com/WikiGenius/ros-husky-traffic-sign-detection) | Earlier ROS 1 perception example |
+| [Line-scan application scaffold](https://github.com/WikiGenius/line-scan-mobile-manipulator-demo) | Planned scanning and coverage application; no complete runnable demo |
 
-| Repo | Role | Relationship |
-|---|---|---|
-| [`ros2-mobile-robotics-labs`](https://github.com/WikiGenius/ros2-mobile-robotics-labs) | ROS2 systems foundation | Clean labs for nodes, launch files, URDF, RViz, simulation, and mobile robotics basics. |
-| [`hello_world_ros2_edx`](https://github.com/WikiGenius/hello_world_ros2_edx) | Earlier learning evidence | Useful history/migration reference, but not a main pinned repo. |
-| [`husky-gazebo-image-capture`](https://github.com/WikiGenius/husky-gazebo-image-capture) | Mobile robot data capture | ROS2 Husky/Gazebo image and odometry capture for later visual-SLAM experiments. |
-| [`ros2-moveit-grasping-demo`](https://github.com/WikiGenius/ros2-moveit-grasping-demo) | Manipulation execution | Uses ROS2/MoveIt2 patterns for Cartesian motion, gripper control, and grasping. |
-| [`line-scan-mobile-manipulator-demo`](https://github.com/WikiGenius/line-scan-mobile-manipulator-demo) | Main active-scanning demo | Future launch/simulation patterns can reuse ROS2 lab structure. |
-| [`ros-husky-traffic-sign-detection`](https://github.com/WikiGenius/ros-husky-traffic-sign-detection) | Legacy ROS perception | Older ROS/catkin Husky/Gazebo traffic-sign detection demo; useful history, not merged into this ROS2 repo. |
+Transforms, timestamps, sensor acquisition, and motion execution are the infrastructure connecting perception-aware planning to a robot. The research direction is open to different sensing modalities and platforms; each application needs its own observation model, calibration, and robot constraints.
 
-## What Belongs Here
-
-Keep this repo focused on reusable ROS2 patterns:
-
-- minimal nodes,
-- launch files,
-- parameters,
-- URDF/RViz examples,
-- Gazebo/Ignition simulation notes,
-- clean command sequences,
-- small screenshots and topic graphs.
-
-Research-specific algorithms, datasets, and private experiments should stay in private repos until a public distilled demo is ready.
-
-## Connection to Main Research
-
-The active scanning project will need robust ROS2 wiring for:
-
-- mobile base control,
-- manipulator control,
-- sensor frames and transforms,
-- RViz visualization,
-- simulation launch files,
-- logging and replay workflows.
-
-Those reusable building blocks belong here before they are specialized in the main line-scan demo.
+These repositories are separate components and examples. Their presence does not imply that an end-to-end planning system has been integrated or validated.
