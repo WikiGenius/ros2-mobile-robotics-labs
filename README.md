@@ -1,91 +1,26 @@
 # ROS2 Mobile Robotics Labs
 
-## Purpose
+A navigation hub and package scaffold for ROS-based robot experiments. There is currently no runnable node or launch demo in this repository.
 
-This repository is a public ROS2 mobile robotics scaffold for organizing future learning labs around nodes, launch files, URDF/RViz, simulation workflows, and reusable integration patterns.
+## Implemented projects
 
-It supports the broader mobile-manipulation research portfolio without pretending that full robot simulation, autonomy, or research integration is already complete.
+| Project | Stack | Purpose |
+| --- | --- | --- |
+| [MoveIt grasping demo](https://github.com/WikiGenius/ros2-moveit-grasping-demo) | ROS2 / MoveIt2 | Arm/gripper execution with Cartesian approach and retreat |
+| [Husky image capture](https://github.com/WikiGenius/husky-gazebo-image-capture) | ROS2 Humble | Keyboard driving, image snapshots, and odometry logging |
+| [Traffic-sign detection](https://github.com/WikiGenius/ros-husky-traffic-sign-detection) | ROS 1 / catkin | Legacy camera-stream perception integration |
+| [ROS2 course exercises](https://github.com/WikiGenius/hello_world_ros2_edx) | ROS2 | Learning and migration exercises |
 
-## Portfolio Role
+Use each project's own installation and run instructions. Their robot models, topics, dependencies, and tested environments differ.
 
-This repo should act as the ROS2 organization hub, not a container for every ROS-related project.
+## Research connection
 
-| Related repo | Stack | Relationship |
-|---|---|---|
-| [`hello_world_ros2_edx`](https://github.com/WikiGenius/hello_world_ros2_edx) | ROS2 | Course-based ROS2 learning and ROS1-to-ROS2 migration evidence. |
-| [`husky-gazebo-image-capture`](https://github.com/WikiGenius/husky-gazebo-image-capture) | ROS2 | Husky/Gazebo image and odometry capture for later visual-SLAM experiments. |
-| [`ros2-moveit-grasping-demo`](https://github.com/WikiGenius/ros2-moveit-grasping-demo) | ROS2 / MoveIt2 | Perception-guided grasping and manipulation execution. |
-| [`ros-husky-traffic-sign-detection`](https://github.com/WikiGenius/ros-husky-traffic-sign-detection) | ROS 1 / catkin | Legacy Husky/Gazebo traffic-sign perception demo; related history, not merged here. |
+These implementations support the observation and execution sides of [perception-aware motion planning](https://github.com/WikiGenius): collect measurements, maintain frame relationships, and execute planned motions.
 
-## Tested Environment
+The research direction is not limited to ROS, mobile robots, or a particular sensing modality. ROS-based projects provide one practical integration environment.
 
-No end-to-end runnable lab environment is fully documented yet.
+## Next lab
 
-- Ubuntu: not fully documented yet
-- ROS 2: not fully documented yet
-- Build system: colcon target scaffold
-- Language: future C++ / Python labs
-- Simulation/hardware: not included yet
+A future lab should include a runnable node, explicit dependencies, a launch workflow, and an observable result before it is described as an implemented demonstration. ROS2 Humble on Ubuntu 22.04 is the intended starting environment for this scaffold, not a verified end-to-end setup.
 
-Target future environment is ROS2 Humble on Ubuntu 22.04, but this should be confirmed after the first real public-safe lab is added and tested.
-
-## Current Runnable Artifact
-
-There is currently no runnable ROS2 node or launch demo in this public repo.
-
-The repository contains a ROS2 package scaffold and folders reserved for future nodes, launch files, documentation, results, and media.
-
-## Build and Run
-
-Expected build workflow for a future ROS2 workspace:
-
-```bash
-mkdir -p ~/ros2_ws/src
-cd ~/ros2_ws/src
-git clone https://github.com/WikiGenius/ros2-mobile-robotics-labs.git
-cd ~/ros2_ws
-rosdep install --from-paths src --ignore-src -r -y
-colcon build --packages-select ros2_mobile_robotics_labs
-source install/setup.bash
-```
-
-No `ros2 run` or `ros2 launch` command is listed yet because no runnable node or launch demo is currently included.
-
-## What This Demonstrates
-
-This repo currently demonstrates:
-
-- a clean public scaffold for ROS2 mobile robotics labs,
-- public folder organization for nodes, launch files, docs, results, and media,
-- how ROS2 support work relates to MoveIt2 grasping, visual estimation, control, and active scanning.
-
-## Limitations
-
-This repository is currently an early-stage public ROS2 scaffold. It does not yet include:
-
-- a complete robot model,
-- a full simulation world,
-- real robot experiments,
-- runnable ROS2 nodes,
-- launch demos,
-- full mobile manipulation integration,
-- state estimation,
-- benchmark comparisons,
-- paper-level results.
-
-## Planned Additions
-
-- Public-safe ROS2 node.
-- Launch file for a real public-safe lab.
-- URDF/RViz lab.
-- Simulation world.
-- Mobile robot controller integration.
-- Active-scanning bridge demo.
-
-## Rights and Reuse
-
-This repository is shared as a public academic portfolio/scaffold. Unless a separate open-source license is explicitly added, all rights are reserved by the author.
-
-## Related Organization
-
-See [`docs/related-repositories.md`](docs/related-repositories.md) for how this ROS2 lab fits into the public portfolio.
+See the linked projects for current evidence and license terms. No project-wide open-source license is granted by this index.
